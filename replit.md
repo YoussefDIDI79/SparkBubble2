@@ -2,11 +2,24 @@
 
 ## Overview
 
-SparkBubble is a digital solutions agency website specializing in AI, machine learning, and full-stack development services. The project is a modern, interactive marketing website built with vanilla HTML, CSS, and JavaScript, featuring advanced animations, responsive design, and a portfolio showcase. The site presents the agency's expertise in AI/ML integration, full-stack development, and digital transformation services.
+SparkBubble is a digital solutions agency website specializing in AI, machine learning, and full-stack development services. The project is a clean, minimal marketing website built with vanilla HTML, CSS, and JavaScript, featuring Apple-inspired design, responsive layout, and professional presentation. The site emphasizes simplicity and elegance in showcasing the agency's expertise in AI/ML integration, full-stack development, and digital transformation services.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+## Recent Changes
+
+### Latest modifications with dates
+
+**August 25, 2025:**
+- Removed moon emoji (🌙) from hero title for cleaner Apple-style design
+- Disabled all card hover animations and parallax effects for minimal aesthetic
+- Redesigned team section to display 4 members in 2x2 grid layout
+- Improved team card styling with subtle borders and larger avatars
+- Removed complex mouse-following animations for cleaner interactions
+- Updated color scheme for team avatars to match minimal design philosophy
+- Added responsive grid that stacks to single column on mobile devices
 
 ## System Architecture
 

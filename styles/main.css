@@ -555,14 +555,7 @@ body {
     padding: var(--spacing-2xl);
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-subtle);
-    transition: all var(--transition-normal);
     text-align: center;
-}
-
-.expertise-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-color);
 }
 
 .card-icon {
@@ -591,8 +584,10 @@ body {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-2xl);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .team-card {
@@ -600,70 +595,67 @@ body {
     border-radius: var(--radius-lg);
     padding: var(--spacing-2xl);
     border: 1px solid var(--border-subtle);
-    transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
 }
 
-.team-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
-}
-
 .team-avatar {
     position: relative;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
 }
 
 .avatar-placeholder {
-    width: 80px;
-    height: 80px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: var(--background-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    font-size: 1.75rem;
+    font-weight: var(--font-weight-semibold);
     margin: 0 auto var(--spacing-md);
+    border: 2px solid var(--border-subtle);
 }
 
 .status-badge {
     position: absolute;
-    top: -8px;
-    right: calc(50% - 60px);
+    top: -12px;
+    right: calc(50% - 72px);
     background: var(--success-color);
     color: white;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--radius-sm);
-    font-size: 0.75rem;
-    font-weight: var(--font-weight-semibold);
+    padding: 4px var(--spacing-sm);
+    border-radius: var(--radius-xl);
+    font-size: 0.7rem;
+    font-weight: var(--font-weight-medium);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .team-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     font-weight: var(--font-weight-semibold);
     color: var(--text-primary);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
     text-align: center;
 }
 
 .team-role {
-    color: var(--primary-color);
-    font-weight: var(--font-weight-medium);
-    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: var(--spacing-lg);
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
 .team-description {
     color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: var(--spacing-lg);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-xl);
     text-align: center;
+    font-size: 0.9rem;
 }
 
 .team-skills {
@@ -726,13 +718,7 @@ body {
     border-radius: var(--radius-lg);
     overflow: hidden;
     border: 1px solid var(--border-subtle);
-    transition: all var(--transition-normal);
     position: relative;
-}
-
-.portfolio-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
 }
 
 .portfolio-card.featured {
@@ -1334,6 +1320,12 @@ body {
     
     .checkbox-group {
         grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        max-width: 400px;
     }
 }
 

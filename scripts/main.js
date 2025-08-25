@@ -131,43 +131,9 @@ function initializeScrollAnimations() {
     addScrollAnimateClasses();
 }
 
-// Add scroll animation classes to elements
+// Add scroll animation classes to elements (disabled for minimal design)
 function addScrollAnimateClasses() {
-    // About section cards
-    const expertiseCards = document.querySelectorAll('.expertise-card');
-    expertiseCards.forEach((card, index) => {
-        card.classList.add('scroll-animate');
-        card.style.animationDelay = `${index * 0.1}s`;
-    });
-    
-    // Team cards
-    const teamCards = document.querySelectorAll('.team-card');
-    teamCards.forEach((card, index) => {
-        card.classList.add('scroll-animate-scale');
-        card.style.animationDelay = `${index * 0.2}s`;
-    });
-    
-    // Portfolio cards
-    const portfolioCards = document.querySelectorAll('.portfolio-card');
-    portfolioCards.forEach((card, index) => {
-        card.classList.add('scroll-animate');
-        card.style.animationDelay = `${index * 0.15}s`;
-    });
-    
-    // Timeline items
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    timelineItems.forEach((item, index) => {
-        const isEven = index % 2 === 0;
-        item.classList.add(isEven ? 'scroll-animate-left' : 'scroll-animate-right');
-        item.style.animationDelay = `${index * 0.2}s`;
-    });
-    
-    // Tech items
-    const techItems = document.querySelectorAll('.tech-item');
-    techItems.forEach((item, index) => {
-        item.classList.add('scroll-animate-left');
-        item.style.animationDelay = `${index * 0.1}s`;
-    });
+    // Disabled for minimal Apple-style design
 }
 
 // Contact form functionality
