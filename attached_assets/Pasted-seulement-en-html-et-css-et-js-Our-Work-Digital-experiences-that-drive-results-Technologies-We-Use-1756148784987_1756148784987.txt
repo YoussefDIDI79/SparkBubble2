@@ -1,0 +1,147 @@
+seulement en html et css et js 
+Our Work
+Digital experiences that drive results
+
+Technologies We Use
+Modern tools and frameworks for exceptional results
+
+Frontend
+REACT
+VUE.JS
+TYPESCRIPT
+NEXT.JS
+TAILWIND CSS
+Backend
+NODE.JS
+PYTHON
+POSTGRESQL
+MONGODB
+AWS
+Design
+FIGMA
+ADOBE CREATIVE SUITE
+FRAMER
+SKETCH
+PRINCIPLE
+Analytics
+GOOGLE ANALYTICS
+MIXPANEL
+HOTJAR
+A/B TESTING
+SEO
+All Projects
+Explore our complete portfolio
+
+SourireCare Healthcare Platform
+React
+Node.js
+PostgreSQL
+View Project →
+HEALTHCARE
+SourireCare
+Comprehensive healthcare platform connecting patients with care providers through telemedicine and appointment management.
+
+2024
+300% ↑ User Engagement
+BoxMedia Digital Agency
+Vue.js
+GSAP
+Three.js
+View Project →
+DIGITAL AGENCY
+BoxMedia
+Interactive digital agency portfolio featuring immersive storytelling and cutting-edge animations.
+
+2024
+150% ↑ Conversion Rate
+FinanceCore Banking Dashboard
+React
+D3.js
+Express
+View Project →
+FINTECH
+FinanceCore
+Advanced banking dashboard featuring real-time analytics, transaction management, and financial insights.
+
+2024
+40% ↓ Processing Time
+EcoLogistics Supply Chain
+Next.js
+Python
+MongoDB
+View Project →
+LOGISTICS
+EcoLogistics
+Sustainable supply chain management platform optimizing delivery routes and reducing carbon footprint.
+
+2023
+25% ↓ Carbon Emissions
+HealthTech Medical IoT
+React Native
+IoT
+AWS
+View Project →
+HEALTHTECH
+HealthTech
+Advanced IoT medical device monitoring system providing real-time health data and alerts.
+
+2023
+60% ↑ Patient Monitoring
+RetailMax E-commerce Platform
+Vue.js
+Shopify
+Stripe
+View Project →
+E-COMMERCE
+RetailMax
+Next-generation e-commerce platform with personalized shopping experiences and AI-powered recommendations.
+
+2024
+200% ↑ Sales Growth
+
+✨
+Let's Build Something Amazing
+Ready to Transform Your Vision Into Reality?
+Join 250+ companies who've trusted us to bring their digital dreams to life. From concept to launch, we're here to make it happen.
+
+Quick Connect
+Get started in 2 minutes
+
+your@email.com
+Connect →
+We'll reach out within 24 hours
+
+Schedule Discovery Call
+30-minute strategy session
+
+Book Now
+🗓️ Free consultation
+🎯 Tailored strategy
+📊 Project roadmap
+Direct Contact
+Reach out personally
+
+📧
+hello@sparkbubble.com
+For project inquiries
+💼
+Connect on LinkedIn
+Professional networking
+Tell Us About Your Project
+The more details you share, the better we can help you achieve your goals.
+
+Full Name*
+Email Address*
+Company
+Project Budget
+
+Select range...
+Project Type
+ Web Design
+ Development
+ Brand Identity
+ Digital Strategy
+Project Details*
+Tell us about your vision, goals, target audience, timeline, and any specific requirements...
+
+Send Project Details
