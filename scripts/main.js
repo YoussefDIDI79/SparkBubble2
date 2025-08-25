@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
     initializeScrollAnimations();
     initializeContactForm();
-    initializeFAQ();
+    initializeFAQ(); // Make sure this is called
     initializeSkillBars();
     initializeLoadingScreen();
     initializeSmoothScrolling();
@@ -473,31 +473,109 @@ function initializeAccessibility() {
     });
 }
 
-// FAQ functionality
+// FAQ functionality with smooth animations and accessibility
 function initializeFAQ() {
     const faqItems = document.querySelectorAll('.faq-item');
     
+    // Add ARIA attributes for accessibility
+    faqItems.forEach((item, index) => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const questionId = `faq-question-${index}`;
+        const answerId = `faq-answer-${index}`;
+        
+        // Set ARIA attributes
+        question.setAttribute('id', questionId);
+        question.setAttribute('aria-expanded', 'false');
+        question.setAttribute('aria-controls', answerId);
+        answer.setAttribute('id', answerId);
+        answer.setAttribute('aria-labelledby', questionId);
+        answer.setAttribute('role', 'region');
+        
+        // Add active class to first item by default
+        if (index === 0) {
+            item.classList.add('active');
+            question.setAttribute('aria-expanded', 'true');
+            answer.classList.add('active');
+        }
+    });
+    
+    // Handle FAQ item clicks
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         const answer = item.querySelector('.faq-answer');
         
-        question.addEventListener('click', () => {
-            const isActive = question.classList.contains('active');
+        question.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
             
-            // Close all other FAQ items
-            faqItems.forEach(otherItem => {
-                const otherQuestion = otherItem.querySelector('.faq-question');
-                const otherAnswer = otherItem.querySelector('.faq-answer');
-                otherQuestion.classList.remove('active');
-                otherAnswer.classList.remove('active');
-            });
-            
-            // Toggle current item
-            if (!isActive) {
-                question.classList.add('active');
+            // Toggle the clicked item
+            if (isExpanded) {
+                item.classList.remove('active');
+                question.setAttribute('aria-expanded', 'false');
+                answer.classList.remove('active');
+            } else {
+                // Close all other items
+                closeAllFAQs();
+                
+                // Open clicked item
+                item.classList.add('active');
+                question.setAttribute('aria-expanded', 'true');
                 answer.classList.add('active');
             }
         });
+        
+        // Keyboard navigation
+        question.addEventListener('keydown', (e) => {
+            // Enter or Space toggles the answer
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                question.click();
+            }
+            
+            // Up/Down arrow keys for navigation
+            if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                const currentIndex = Array.from(faqItems).indexOf(item);
+                let nextIndex;
+                
+                if (e.key === 'ArrowDown') {
+                    nextIndex = (currentIndex + 1) % faqItems.length;
+                } else {
+                    nextIndex = (currentIndex - 1 + faqItems.length) % faqItems.length;
+                }
+                
+                faqItems[nextIndex].querySelector('.faq-question').focus();
+            }
+        });
+    });
+    
+    // Close all FAQs except the one passed as parameter
+    function closeAllFAQs(exceptItem = null) {
+        faqItems.forEach(item => {
+            if (item !== exceptItem) {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                item.classList.remove('active');
+                question.setAttribute('aria-expanded', 'false');
+                answer.classList.remove('active');
+            }
+        });
+    }
+    
+    // Close FAQ when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.faq-item')) {
+            closeAllFAQs();
+        }
+    });
+    
+    // Close FAQ with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeAllFAQs();
+        }
     });
 }
 
