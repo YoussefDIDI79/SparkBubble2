@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkBubble - Excellence in Digital Solutions</title>
+    <meta name="description" content="AI & Full-Stack development agency specializing in intelligent digital solutions, machine learning, and modern web technologies.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">SparkBubble</div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">SparkBubble</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link cta-button">Let's Talk</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line animate-fade-up">🌙 Evening Excellence</span>
+                    <span class="title-line animate-fade-up delay-1">in Digital Solutions</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-up delay-2">
+                    We are a team of AI & Full-Stack developers passionate about innovation. 
+                    Specializing in AI, Machine Learning, and modern web technologies to create intelligent digital solutions.
+                </p>
+                <div class="hero-stats animate-fade-up delay-3">
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">uptime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">products</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">support</span>
+                    </div>
+                </div>
+                <div class="hero-actions animate-fade-up delay-4">
+                    <a href="#contact" class="btn-primary">Get Started</a>
+                    <a href="#work" class="btn-secondary">View Demo</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <span class="code-title">StockTrack.jsx</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="line-number">1</span>&lt;div className="inventory"&gt;</div>
+                        <div class="code-line"><span class="line-number">2</span>const trackStock = () =&gt; {</div>
+                        <div class="code-line"><span class="line-number">3</span>  return innovation.active</div>
+                        <div class="code-line"><span class="line-number">4</span>}</div>
+                    </div>
+                </div>
+                <div class="tech-badges">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">TypeScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🚀 Our Expertise</h2>
+                <h3 class="section-subtitle">What We Do</h3>
+                <p class="section-description">
+                    Full-stack development with AI/ML expertise that transforms your digital vision into reality
+                </p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="card-icon">💻</div>
+                    <h4>Web Development</h4>
+                    <p>Modern, responsive websites built with React and Node.js</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon">🤖</div>
+                    <h4>AI & Machine Learning</h4>
+                    <p>Custom AI solutions using Python, TensorFlow, and advanced NLP</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon">🔗</div>
+                    <h4>API Development</h4>
+                    <p>RESTful APIs and backend services with Flask and Express.js</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon">📊</div>
+                    <h4>Data Analysis</h4>
+                    <p>Sentiment analysis, trend prediction, and data visualization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-description">
+                    Experts in AI, Machine Learning, and Full-Stack Development
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">YD</div>
+                        <div class="status-badge">AVAILABLE</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Youssef Didi</h3>
+                        <p class="team-role">System Administrator & Network Engineer | AI Integration Specialist</p>
+                        <p class="team-description">
+                            Expert in system administration, network infrastructure, and AI-powered solutions. 
+                            Building robust, scalable systems for modern enterprises.
+                        </p>
+                        <div class="team-skills">
+                            <span class="skill-tag">SYSTEM ADMINISTRATION</span>
+                            <span class="skill-tag">NETWORK SECURITY</span>
+                            <span class="skill-tag">AI INTEGRATION</span>
+                            <span class="skill-tag">FULL STACK DEVELOPMENT</span>
+                        </div>
+                        <div class="team-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Technologies Mastered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">TE</div>
+                        <div class="status-badge">AVAILABLE</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Taha Elatoui</h3>
+                        <p class="team-role">Full Stack JavaScript Developer | Backend Architecture Expert | AI Engineer</p>
+                        <p class="team-description">
+                            Specialized in building scalable web applications, robust backend systems, and AI-powered solutions. 
+                            Expert in performance optimization and system architecture.
+                        </p>
+                        <div class="team-skills">
+                            <span class="skill-tag">JAVASCRIPT/NODE.JS</span>
+                            <span class="skill-tag">BACKEND ARCHITECTURE</span>
+                            <span class="skill-tag">AI & MACHINE LEARNING</span>
+                            <span class="skill-tag">SYSTEM SCALING</span>
+                        </div>
+                        <div class="team-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Technologies Mastered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">AA</div>
+                        <div class="status-badge">AVAILABLE</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Abdelmoiz Azlani</h3>
+                        <p class="team-role">Data Engineering Specialist | Machine Learning Engineer | AI Integration Expert</p>
+                        <p class="team-description">
+                            Transforming raw data into actionable insights through advanced ML algorithms and AI solutions. 
+                            Building intelligent systems that drive business value.
+                        </p>
+                        <div class="team-skills">
+                            <span class="skill-tag">DATA ENGINEERING</span>
+                            <span class="skill-tag">MACHINE LEARNING</span>
+                            <span class="skill-tag">AI & DEEP LEARNING</span>
+                            <span class="skill-tag">FULL STACK DEVELOPMENT</span>
+                        </div>
+                        <div class="team-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Technologies Mastered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">IN</div>
+                        <div class="status-badge">AVAILABLE</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Ilias Naoui</h3>
+                        <p class="team-role">Data Engineering Enthusiast | ETL Specialist | Big Data & Cloud Solutions Developer</p>
+                        <p class="team-description">
+                            Passionate about data engineering, implementing efficient ETL processes, and leveraging Big Data 
+                            technologies with cloud-native solutions for scalable data pipelines.
+                        </p>
+                        <div class="team-skills">
+                            <span class="skill-tag">ETL & DATA PIPELINES</span>
+                            <span class="skill-tag">BIG DATA TECHNOLOGIES</span>
+                            <span class="skill-tag">CLOUD SOLUTIONS</span>
+                            <span class="skill-tag">FULL STACK DEVELOPMENT</span>
+                        </div>
+                        <div class="team-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Technologies Mastered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work/Portfolio Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Work</h2>
+                <p class="section-description">Digital experiences that drive results</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card featured">
+                    <div class="portfolio-image">
+                        <div class="project-preview">
+                            <div class="preview-header">📦 Smart Inventory Management</div>
+                            <div class="preview-content">
+                                <h4>Welcome to StockTrack</h4>
+                                <p>The intelligent inventory management system that helps you track products and manage your stock with exceptional efficiency and real-time insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">INVENTORY MANAGEMENT</div>
+                        <h3>StockTrack Platform</h3>
+                        <p>Comprehensive inventory management platform with real-time analytics and AI-powered insights.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="portfolio-results">
+                            <span class="result-metric">📊 Real-Time Analytics</span>
+                            <span class="result-metric">⚡ Lightning Fast Performance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">HEALTHCARE</div>
+                        <h3>SourireCare</h3>
+                        <p>Comprehensive healthcare platform connecting patients with care providers through telemedicine.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="portfolio-result">300% ↑ User Engagement</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">FINTECH</div>
+                        <h3>FinanceCore</h3>
+                        <p>Advanced banking dashboard featuring real-time analytics and transaction management.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <div class="portfolio-result">40% ↓ Processing Time</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">E-COMMERCE</div>
+                        <h3>RetailMax</h3>
+                        <p>Next-generation e-commerce platform with AI-powered recommendations.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Shopify</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="portfolio-result">200% ↑ Sales Growth</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services/Methodology Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">⚡ Our Methodology</h2>
+                <h3 class="section-subtitle">Our Process</h3>
+                <p class="section-description">
+                    How we bring your digital vision to life through our proven methodology
+                </p>
+            </div>
+            <div class="methodology-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h4>Discovery & Analysis</h4>
+                        <p>We dive deep into your business goals, target audience, and technical requirements. Through comprehensive research and stakeholder interviews, we understand your vision and define project scope.</p>
+                        <div class="timeline-features">
+                            <span class="feature-tag">Requirements Gathering</span>
+                            <span class="feature-tag">Market Research</span>
+                            <span class="feature-tag">Technical Assessment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h4>Strategy & Architecture</h4>
+                        <p>We develop a comprehensive technical strategy and system architecture. This includes technology stack selection, database design, API planning, and creating a detailed development roadmap.</p>
+                        <div class="timeline-features">
+                            <span class="feature-tag">System Architecture</span>
+                            <span class="feature-tag">Technology Stack</span>
+                            <span class="feature-tag">Development Roadmap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h4>Design & Prototyping</h4>
+                        <p>We create beautiful, functional user experiences with modern UI/UX design principles. From wireframes to high-fidelity prototypes, we ensure every interaction is intuitive and engaging.</p>
+                        <div class="timeline-features">
+                            <span class="feature-tag">UI/UX Design</span>
+                            <span class="feature-tag">Interactive Prototypes</span>
+                            <span class="feature-tag">Design Systems</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h4>Development & Integration</h4>
+                        <p>Our full-stack development brings your vision to life. We build robust frontend interfaces, scalable backend systems, and integrate AI/ML capabilities using modern technologies and best practices.</p>
+                        <div class="timeline-features">
+                            <span class="feature-tag">Frontend Development</span>
+                            <span class="feature-tag">Backend APIs</span>
+                            <span class="feature-tag">AI/ML Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">05</div>
+                    <div class="timeline-content">
+                        <h4>Testing & Launch</h4>
+                        <p>We rigorously test every component, optimize performance, and ensure security. After thorough quality assurance, we deploy your solution and provide ongoing support and maintenance.</p>
+                        <div class="timeline-features">
+                            <span class="feature-tag">Quality Assurance</span>
+                            <span class="feature-tag">Performance Optimization</span>
+                            <span class="feature-tag">Deployment & Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technologies We Use</h2>
+                <p class="section-description">Modern tools and frameworks for exceptional results</p>
+            </div>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-icon">⚛️</span>
+                            <span class="tech-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-skill="95"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🟢</span>
+                            <span class="tech-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-skill="90"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">💨</span>
+                            <span class="tech-name">Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-skill="85"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">📘</span>
+                            <span class="tech-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-skill="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Backend & AI</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-icon">🐍</span>
+                            <span class="tech-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-skill="88"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🗄️</span>
+                            <span class="tech-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-skill="82"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🤖</span>
+                            <span class="tech-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-skill="78"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">☁️</span>
+                            <span class="tech-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-skill="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>✨ Let's Build Something Amazing</h2>
+                    <h3>Ready to Transform Your Vision Into Reality?</h3>
+                    <p>Join 250+ companies who've trusted us to bring their digital dreams to life. From concept to launch, we're here to make it happen.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h4>Direct Contact</h4>
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <div>
+                                    <span class="contact-label">hello@sparkbubble.com</span>
+                                    <span class="contact-desc">For project inquiries</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">💼</span>
+                                <div>
+                                    <span class="contact-label">Connect on LinkedIn</span>
+                                    <span class="contact-desc">Professional networking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h4>Tell Us About Your Project</h4>
+                        <p>The more details you share, the better we can help you achieve your goals.</p>
+                        
+                        <div class="form-group">
+                            <input type="text" id="fullName" name="fullName" placeholder="Full Name*" required>
+                            <span class="form-error" id="fullNameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address*" required>
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range...</option>
+                                <option value="under-10k">Under $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="over-100k">Over $100,000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="projectType" value="web-design">
+                                    <span class="checkmark"></span>
+                                    Web Design
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="projectType" value="development">
+                                    <span class="checkmark"></span>
+                                    Development
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="projectType" value="ai-ml">
+                                    <span class="checkmark"></span>
+                                    AI & Machine Learning
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="projectType" value="digital-strategy">
+                                    <span class="checkmark"></span>
+                                    Digital Strategy
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="projectDetails" name="projectDetails" placeholder="Tell us about your vision, goals, target audience, timeline, and any specific requirements..." rows="4" required></textarea>
+                            <span class="form-error" id="projectDetailsError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary" id="submitBtn">
+                            <span class="btn-text">Send Project Details</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button>
+                        
+                        <div class="form-success" id="formSuccess" style="display: none;">
+                            <span class="success-icon">✅</span>
+                            Thank you! We'll reach out within 24 hours.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SparkBubble</h3>
+                    <p>Excellence in Digital Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#team">Team</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SparkBubble. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+</body>
+</html>
