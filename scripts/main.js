@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
     initializeScrollAnimations();
     initializeContactForm();
+    initializeFAQ();
     initializeSkillBars();
     initializeLoadingScreen();
     initializeSmoothScrolling();
@@ -468,6 +469,34 @@ function initializeAccessibility() {
         element.addEventListener('blur', function() {
             this.style.outline = '';
             this.style.outlineOffset = '';
+        });
+    });
+}
+
+// FAQ functionality
+function initializeFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        
+        question.addEventListener('click', () => {
+            const isActive = question.classList.contains('active');
+            
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+                const otherQuestion = otherItem.querySelector('.faq-question');
+                const otherAnswer = otherItem.querySelector('.faq-answer');
+                otherQuestion.classList.remove('active');
+                otherAnswer.classList.remove('active');
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                question.classList.add('active');
+                answer.classList.add('active');
+            }
         });
     });
 }
