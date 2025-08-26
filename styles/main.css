@@ -20,7 +20,7 @@
     #technologies h2,
     #technologies h3,
     #technologies p,
-    #technologies .tech-name {
+    #technologies .skills-name {
         color: black; /* ensures text is readable */
     }
 
