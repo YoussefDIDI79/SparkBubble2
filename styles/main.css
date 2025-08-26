@@ -1,4 +1,22 @@
 /* FAST AOS Implementation - Optimized for Speed */
+@media (prefers-color-scheme: dark) {
+    /* Team section */
+    #team,
+    #team h2,
+    #team h3,
+    #team p,
+    #team .team-member-name,
+    #team .team-member-role {
+        color: black; /* safe text color */
+    }
+
+    #team .team-card {
+        background-color: white; /* safe background */
+    }
+
+    /* You can add Skills & FAQ later similarly */
+}
+
 [data-aos] {
     /* Start visible for safety, allow AOS to take over */
     opacity: 1;
