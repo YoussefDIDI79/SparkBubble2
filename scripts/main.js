@@ -1,5 +1,20 @@
 // Main JavaScript functionality
+@media (prefers-color-scheme: dark) {
+    /* Only apply text color if the element exists */
+    #team,
+    #team h2,
+    #team h3,
+    #team p,
+    #team .team-member-name,
+    #team .team-member-role {
+        color: black; /* no !important, safer */
+    }
 
+    /* Only set card background if it exists */
+    #team .team-card {
+        background-color: white; /* remove !important */
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize AOS with proper safety
