@@ -1,16 +1,88 @@
 // Main JavaScript functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS with proper safety
+    initializeAOSWithSafety();
+    
     // Initialize all components
     initializeNavigation();
     initializeScrollAnimations();
     initializeContactForm();
-    initializeFAQ(); // Make sure this is called
+    initializeFAQ();
     initializeSkillBars();
     initializeLoadingScreen();
     initializeSmoothScrolling();
     initializeParallaxEffects();
     initializeTypewriterEffect();
 });
+
+
+
+// FAST AOS initialization with optimized speed settings
+function initializeAOSWithSafety() {
+    console.log('Initializing AOS with fast settings...');
+    
+    // Try to initialize AOS if available
+    if (typeof AOS !== 'undefined') {
+        try {
+            AOS.init({
+                // FAST settings for responsive animations
+                duration: 600,              // Faster duration (reduced from 1200ms)
+                easing: 'ease-out',         // Faster easing (simpler curve)
+                delay: 0,                   // No delay for immediate response
+                offset: 50,                 // Earlier trigger point
+                once: true,                 // Animation only once
+                mirror: false,              // No reverse animations
+                disable: false,
+                throttleDelay: 50,          // Faster scroll response
+                debounceDelay: 25,          // Quicker debounce
+                startEvent: 'DOMContentLoaded'
+            });
+            
+            console.log('AOS initialized with fast settings');
+            window.aosInitialized = true;
+            
+            // Refresh AOS after content loads (faster timeout)
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    AOS.refresh();
+                    console.log('AOS refreshed after page load');
+                }, 200); // Reduced from 500ms
+            });
+            
+        } catch (error) {
+            console.error('AOS initialization failed:', error);
+            // Add fallback class to body
+            document.body.classList.add('aos-fallback');
+        }
+    } else {
+        console.warn('AOS library not found.');
+        // Add fallback class to body
+        document.body.classList.add('aos-fallback');
+    }
+}
+
+// Simple fallback function for emergency cases only
+function ensureContentVisibility() {
+    // Only run this if AOS completely fails to load after 5 seconds
+    if (!window.aosInitialized) {
+        const aosElements = document.querySelectorAll('[data-aos]');
+        aosElements.forEach(element => {
+            element.style.opacity = '1';
+            element.style.transform = 'none';
+            element.style.visibility = 'visible';
+        });
+        document.body.classList.add('aos-fallback');
+        console.log('Emergency fallback: Content made visible');
+    }
+}
+
+// Legacy function name for compatibility
+function showAOSElementsImmediately() {
+    ensureContentVisibility();
+}
+
+// Emergency check only if AOS fails completely after 5 seconds
+setTimeout(ensureContentVisibility, 5000);
 
 // Navigation functionality
 function initializeNavigation() {
