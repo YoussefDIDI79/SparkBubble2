@@ -13,6 +13,9 @@
     #team .team-card {
         background-color: white; /* safe background */
     }
+    #team .team-stats .stat-item span{
+        color: black;
+    }
 
     /* You can add Skills & FAQ later similarly */
 }
