@@ -1,18 +1,5 @@
 // Main JavaScript functionality
-@media (prefers-color-scheme: dark) {
-    #team,
-    #team h2,
-    #team h3,
-    #team p,
-    #team .team-member-name,
-    #team .team-member-role {
-        color: #000 !important; /* force black text in dark mode */
-    }
 
-    #team .team-card {
-        background-color: #fff; /* optional: ensure text contrast */
-    }
-}
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize AOS with proper safety
