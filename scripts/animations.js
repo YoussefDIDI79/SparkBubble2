@@ -115,23 +115,30 @@ class AnimationController {
 
     const counterObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            const content = entry.target.textContent.trim(); // e.g., "7/7"
-            const parts = content.split('/'); // ["7", "7"]
+            const content = entry.target.textContent.trim();
 
             if (entry.isIntersecting) {
-                const targetNumber = parseInt(parts[0]);
-                const duration = 1000; // animation duration in ms
-                let start = 0;
-                const increment = targetNumber / (duration / 16); // approx 60fps
+                // Special case: contains a slash
+                if (content.includes('/')) {
+                    const parts = content.split('/'); // ["7", "7"]
+                    const targetNumber = parseInt(parts[0]);
+                    let start = 0;
+                    const duration = 1000;
+                    const increment = targetNumber / (duration / 16);
 
-                const counterInterval = setInterval(() => {
-                    start += increment;
-                    if (start >= targetNumber) {
-                        start = targetNumber;
-                        clearInterval(counterInterval);
-                    }
-                    entry.target.textContent = Math.floor(start) + '/' + parts[1];
-                }, 16); // ~60fps
+                    const interval = setInterval(() => {
+                        start += increment;
+                        if (start >= targetNumber) {
+                            start = targetNumber;
+                            clearInterval(interval);
+                        }
+                        entry.target.textContent = Math.floor(start) + '/' + parts[1];
+                    }, 16);
+
+                } else {
+                    // Normal animation for numeric stats (existing code)
+                    this.animateCounter(entry.target);
+                }
 
                 counterObserver.unobserve(entry.target);
             }
@@ -140,6 +147,7 @@ class AnimationController {
 
     counters.forEach(counter => counterObserver.observe(counter));
 }
+
 
     
     // Progress bar animations for skills
