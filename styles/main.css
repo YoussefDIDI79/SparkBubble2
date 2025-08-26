@@ -20,7 +20,7 @@
     #technologies h2,
     #technologies h3,
     #technologies p,
-    #technologies .skill-name , .faq .container .section-title , .faq .container .section-description {
+    #technologies .skill-name , .faq .container .section-title , .faq .container .section-description , #contact .container .contact-methods .contact-method .contact-content .contact-label , #contact .container .contact-methods .contact-method .contact-content .contact-desc {
         color: black; /* ensures text is readable */
     }
 
