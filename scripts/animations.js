@@ -110,7 +110,7 @@ class AnimationController {
     }
     
     // Animated counters for statistics
-    setupCounterAnimations() {
+  setupCounterAnimations() {
     const counters = document.querySelectorAll('.stat-number');
 
     const counterObserver = new IntersectionObserver((entries) => {
@@ -118,25 +118,35 @@ class AnimationController {
             const content = entry.target.textContent.trim();
 
             if (entry.isIntersecting) {
-                // Special case: contains a slash
+                // Special case: contains a slash (e.g., "7/7")
                 if (content.includes('/')) {
                     const parts = content.split('/'); // ["7", "7"]
-                    const targetNumber = parseInt(parts[0]);
-                    let start = 0;
-                    const duration = 1000;
-                    const increment = targetNumber / (duration / 16);
+                    const targetFirst = parseInt(parts[0]);
+                    const targetSecond = parseInt(parts[1]);
+
+                    let startFirst = 0;
+                    let startSecond = 0;
+                    const duration = 1000; // animation duration in ms
+                    const incrementFirst = targetFirst / (duration / 16);
+                    const incrementSecond = targetSecond / (duration / 16);
 
                     const interval = setInterval(() => {
-                        start += increment;
-                        if (start >= targetNumber) {
-                            start = targetNumber;
+                        startFirst += incrementFirst;
+                        startSecond += incrementSecond;
+
+                        if (startFirst >= targetFirst) startFirst = targetFirst;
+                        if (startSecond >= targetSecond) startSecond = targetSecond;
+
+                        entry.target.textContent = Math.floor(startFirst) + '/' + Math.floor(startSecond);
+
+                        // Stop when both numbers reach their targets
+                        if (startFirst === targetFirst && startSecond === targetSecond) {
                             clearInterval(interval);
                         }
-                        entry.target.textContent = Math.floor(start) + '/' + parts[1];
                     }, 16);
 
                 } else {
-                    // Normal animation for numeric stats (existing code)
+                    // Normal animation for numeric stats
                     this.animateCounter(entry.target);
                 }
 
@@ -147,6 +157,7 @@ class AnimationController {
 
     counters.forEach(counter => counterObserver.observe(counter));
 }
+
 
 
     
