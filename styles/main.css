@@ -882,6 +882,29 @@ body {
     overflow: hidden;
     border: 1px solid var(--border-subtle);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.portfolio-content {
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.portfolio-actions {
+    margin-top: auto;
+    padding-top: var(--spacing-lg);
+}
+
+.portfolio-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
 }
 
 .portfolio-card.featured {
@@ -896,6 +919,31 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-badge {
+    position: absolute;
+    top: var(--spacing-md);
+    left: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.badge-text {
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .project-preview {
@@ -940,17 +988,69 @@ body {
     margin-bottom: var(--spacing-sm);
 }
 
-.portfolio-content h3 {
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+    min-height: 2rem;
+}
+
+.project-title {
     font-size: 1.25rem;
     font-weight: var(--font-weight-semibold);
     color: var(--text-primary);
-    margin-bottom: var(--spacing-md);
+    margin: 0;
+    flex: 1;
 }
 
-.portfolio-content p {
+.project-status {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    flex-shrink: 0;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success-color);
+}
+
+.status-text {
+    font-size: 0.75rem;
+    color: var(--success-color);
+    font-weight: var(--font-weight-medium);
+}
+
+.project-description {
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: var(--spacing-lg);
+    min-height: 3rem;
+}
+
+.portfolio-metrics {
+    margin-bottom: var(--spacing-lg);
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.metric-value {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--success-color);
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-medium);
 }
 
 .tech-stack {
@@ -958,6 +1058,8 @@ body {
     flex-wrap: wrap;
     gap: var(--spacing-sm);
     margin-bottom: var(--spacing-lg);
+    min-height: 2rem;
+    align-items: flex-start;
 }
 
 .tech-tag {

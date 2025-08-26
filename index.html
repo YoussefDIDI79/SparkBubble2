@@ -14,6 +14,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -51,87 +52,90 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="title-line">Excellence</span>
-                    <span class="title-line">in Digital Solutions</span>
+                    <span class="title-line" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">Excellence</span>
+                    <span class="title-line" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">in Digital Solutions</span>
                 </h1>
-                <p class="hero-subtitle animate-fade-up delay-2">
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                     We are a team of AI & Full-Stack developers passionate about innovation. 
                     Specializing in AI, Machine Learning, and modern web technologies to create intelligent digital solutions.
                 </p>
-                <div class="hero-stats animate-fade-up delay-3">
-                    <div class="stat">
+                <div class="hero-stats" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                    <div class="stat" data-aos="zoom-in" data-aos-delay="1000">
                         <span class="stat-number">99.9%</span>
                         <span class="stat-label">uptime</span>
                     </div>
-                    <div class="stat">
+                    <div class="stat" data-aos="zoom-in" data-aos-delay="1200">
                         <span class="stat-number">10K+</span>
                         <span class="stat-label">products</span>
                     </div>
-                    <div class="stat">
+                    <div class="stat" data-aos="zoom-in" data-aos-delay="1400">
                         <span class="stat-number">24/7</span>
                         <span class="stat-label">support</span>
                     </div>
                 </div>
-                <div class="hero-actions animate-fade-up delay-4">
-                    <a href="#contact" class="btn-primary">Get Started</a>
-                    <a href="#work" class="btn-secondary">View Demo</a>
+                <div class="hero-actions" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+                    <a href="#contact" class="btn-primary" data-aos="slide-right" data-aos-delay="1200">Get Started</a>
+                    <a href="#work" class="btn-secondary" data-aos="slide-left" data-aos-delay="1400">View Demo</a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="code-preview">
-                    <div class="code-header">
-                        <span class="code-title">StockTrack.jsx</span>
+                <div class="code-preview" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="code-header" data-aos="fade-down" data-aos-delay="800">
+                        <span class="code-title" data-aos="type-writer" data-aos-delay="1000">StockTrack.jsx</span>
                     </div>
                     <div class="code-content">
-                        <div class="code-line"><span class="line-number">1</span>&lt;div className="inventory"&gt;</div>
-                        <div class="code-line"><span class="line-number">2</span>const trackStock = () =&gt; {</div>
-                        <div class="code-line"><span class="line-number">3</span>  return innovation.active</div>
-                        <div class="code-line"><span class="line-number">4</span>}</div>
+                        <div class="code-line" data-aos="fade-right" data-aos-delay="1200"><span class="line-number">1</span>&lt;div className="inventory"&gt;</div>
+                        <div class="code-line" data-aos="fade-right" data-aos-delay="1400"><span class="line-number">2</span>const trackStock = () =&gt; {</div>
+                        <div class="code-line" data-aos="fade-right" data-aos-delay="1600"><span class="line-number">3</span>  return innovation.active</div>
+                        <div class="code-line" data-aos="fade-right" data-aos-delay="1800"><span class="line-number">4</span>}</div>
                     </div>
                 </div>
-                <div class="tech-badges">
-                    <span class="tech-badge">React</span>
-                    <span class="tech-badge">Node.js</span>
-                    <span class="tech-badge">MongoDB</span>
-                    <span class="tech-badge">TypeScript</span>
+                <div class="tech-badges" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+                    <span class="tech-badge" data-aos="bounce-in" data-aos-delay="1200">React</span>
+                    <span class="tech-badge" data-aos="bounce-in" data-aos-delay="1300">Node.js</span>
+                    <span class="tech-badge" data-aos="bounce-in" data-aos-delay="1400">MongoDB</span>
+                    <span class="tech-badge" data-aos="bounce-in" data-aos-delay="1500">TypeScript</span>
                 </div>
             </div>
         </div>
-        <div class="hero-scroll-indicator">
-            <div class="scroll-mouse"></div>
+        <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000">
+            <div class="scroll-mouse" data-aos="bounce" data-aos-delay="2500" data-aos-duration="2000" data-aos-iteration="infinite"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">🚀 Our Expertise</h2>
-                <h3 class="section-subtitle">What We Do</h3>
-                <p class="section-description">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <h2 class="section-title" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200">🚀 Our Expertise</h2>
+                <h3 class="section-subtitle" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="400">What We Do</h3>
+                <p class="section-description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                     Full-stack development with AI/ML expertise that transforms your digital vision into reality
                 </p>
             </div>
             <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="card-icon">💻</div>
-                    <h4>Web Development</h4>
-                    <p>Modern, responsive websites built with React and Node.js</p>
+                <div class="expertise-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-cubic">
+                    <div class="card-icon" data-aos="bounce-in" data-aos-delay="400" data-aos-duration="800">💻</div>
+                    <h4 data-aos="fade-right" data-aos-delay="600" data-aos-duration="600">Web Development</h4>
+                    <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="500">Modern, responsive websites built with React and Node.js</p>
                 </div>
-                <div class="expertise-card">
-                    <div class="card-icon">🤖</div>
-                    <h4>AI & Machine Learning</h4>
-                    <p>Custom AI solutions using Python, TensorFlow, and advanced NLP</p>
+                
+                <div class="expertise-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-out-cubic">
+                    <div class="card-icon" data-aos="flip-left" data-aos-delay="600" data-aos-duration="800">🤖</div>
+                    <h4 data-aos="fade-left" data-aos-delay="800" data-aos-duration="600">AI & Machine Learning</h4>
+                    <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500">Custom AI solutions using Python, TensorFlow, and advanced NLP</p>
                 </div>
-                <div class="expertise-card">
-                    <div class="card-icon">🔗</div>
-                    <h4>API Development</h4>
-                    <p>RESTful APIs and backend services with Flask and Express.js</p>
+                
+                <div class="expertise-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-easing="ease-out-cubic">
+                    <div class="card-icon" data-aos="zoom-in-down" data-aos-delay="800" data-aos-duration="800">🔗</div>
+                    <h4 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="600">API Development</h4>
+                    <p data-aos="fade-up" data-aos-delay="1200" data-aos-duration="500">RESTful APIs and backend services with Flask and Express.js</p>
                 </div>
-                <div class="expertise-card">
-                    <div class="card-icon">📊</div>
-                    <h4>Data Analysis</h4>
-                    <p>Sentiment analysis, trend prediction, and data visualization</p>
+                
+                <div class="expertise-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-easing="ease-out-cubic">
+                    <div class="card-icon" data-aos="pulse" data-aos-delay="1000" data-aos-duration="1200">📊</div>
+                    <h4 data-aos="fade-left" data-aos-delay="1200" data-aos-duration="600">Data Analysis</h4>
+                    <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="500">Sentiment analysis, trend prediction, and data visualization</p>
                 </div>
             </div>
         </div>
@@ -298,71 +302,119 @@
                 <p class="section-description">Exceptional digital solutions that deliver measurable results</p>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-card featured">
+                <div class="portfolio-card" data-aos="fade-down-left" data-aos-delay="100">
                     <div class="portfolio-image">
-                        <div class="project-preview">
-                            <div class="preview-header">📦 Smart Inventory Management</div>
-                            <div class="preview-content">
-                                <h4>Welcome to StockTrack</h4>
-                                <p>The intelligent inventory management system that helps you track products and manage your stock with exceptional efficiency and real-time insights.</p>
+                        <img src="photo/s.PNG" alt="SourireCare Healthcare Platform" class="project-image">
+                        <div class="portfolio-badge">
+                            <span class="badge-text">HEALTHCARE</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3 class="project-title">SourireCare</h3>
+                            <div class="project-status">
+                                <span class="status-dot active"></span>
+                                <span class="status-text">Live</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">INVENTORY MANAGEMENT</div>
-                        <h3>StockTrack Platform</h3>
-                        <p>Comprehensive inventory management platform with real-time analytics and AI-powered insights.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <div class="portfolio-results">
-                            <span class="result-metric">📊 Real-Time Analytics</span>
-                            <span class="result-metric">⚡ Lightning Fast Performance</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">HEALTHCARE</div>
-                        <h3>SourireCare</h3>
-                        <p>Comprehensive healthcare platform connecting patients with care providers through telemedicine.</p>
+                        <p class="project-description">Comprehensive healthcare platform connecting patients with care providers through telemedicine.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">PostgreSQL</span>
                         </div>
-                        <div class="portfolio-result">300% ↑ User Engagement</div>
+                        <div class="portfolio-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">300%</span>
+                                <span class="metric-label">User Engagement</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://attached-8wt4.vercel.app/" target="_blank" class="btn-primary portfolio-btn">
+                                <span>Visit Website</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="portfolio-card">
+                <div class="portfolio-card" data-aos="fade-down-right" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="photo/b.PNG" alt="PRESTIGIOUS E-commerce Platform" class="project-image">
+                        <div class="portfolio-badge">
+                            <span class="badge-text">E-COMMERCE</span>
+                        </div>
+                    </div>
                     <div class="portfolio-content">
-                        <div class="portfolio-category">FINTECH</div>
-                        <h3>FinanceCore</h3>
-                        <p>Advanced banking dashboard featuring real-time analytics and transaction management.</p>
+                        <div class="portfolio-header">
+                            <h3 class="project-title">PRESTIGIOUS</h3>
+                            <div class="project-status">
+                                <span class="status-dot active"></span>
+                                <span class="status-text">Live</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Luxury accessories e-commerce platform specializing in jewelry, watches, and fashion accessories for men and women in Morocco.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">React</span>
-                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">Express</span>
                         </div>
-                        <div class="portfolio-result">40% ↓ Processing Time</div>
+                        <div class="portfolio-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">150%</span>
+                                <span class="metric-label">Revenue Growth</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://prestigious-five.vercel.app/" target="_blank" class="btn-primary portfolio-btn">
+                                <span>Visit Website</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="portfolio-card">
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">E-COMMERCE</div>
-                        <h3>RetailMax</h3>
-                        <p>Next-generation e-commerce platform with AI-powered recommendations.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Shopify</span>
-                            <span class="tech-tag">Stripe</span>
+                <div class="portfolio-card" data-aos="fade-up-right" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="photo/p.PNG" alt="BOXMEDIA Digital Agency" class="project-image">
+                        <div class="portfolio-badge">
+                            <span class="badge-text">DIGITAL AGENCY</span>
                         </div>
-                        <div class="portfolio-result">200% ↑ Sales Growth</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3 class="project-title">BOXMEDIA</h3>
+                            <div class="project-status">
+                                <span class="status-dot active"></span>
+                                <span class="status-text">Live</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Full-service digital agency specializing in web development, mobile apps, and digital marketing solutions across Morocco.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <div class="portfolio-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">200+</span>
+                                <span class="metric-label">Projects Delivered</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://boxmedia7.netlify.app/" target="_blank" class="btn-primary portfolio-btn">
+                                <span>Visit Website</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -372,71 +424,71 @@
     <!-- Services/Methodology Section -->
     <section id="services" class="services">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">⚡ Our Methodology</h2>
-                <h3 class="section-subtitle">Our Process</h3>
-                <p class="section-description">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="section-title" data-aos="zoom-in" data-aos-delay="200">⚡ Our Methodology</h2>
+                <h3 class="section-subtitle" data-aos="fade-up" data-aos-delay="400">Our Process</h3>
+                <p class="section-description" data-aos="fade-up" data-aos-delay="600">
                     How we bring your digital vision to life through our proven methodology
                 </p>
             </div>
             <div class="methodology-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-number">01</div>
-                    <div class="timeline-content">
-                        <h4>Discovery & Analysis</h4>
-                        <p>We dive deep into your business goals, target audience, and technical requirements. Through comprehensive research and stakeholder interviews, we understand your vision and define project scope.</p>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="timeline-number" data-aos="zoom-in" data-aos-delay="300">01</div>
+                    <div class="timeline-content" data-aos="fade-left" data-aos-delay="500">
+                        <h4 data-aos="fade-up" data-aos-delay="700">Discovery & Analysis</h4>
+                        <p data-aos="fade-up" data-aos-delay="900">We dive deep into your business goals, target audience, and technical requirements. Through comprehensive research and stakeholder interviews, we understand your vision and define project scope.</p>
                         <div class="timeline-features">
-                            <span class="feature-tag">Requirements Gathering</span>
-                            <span class="feature-tag">Market Research</span>
-                            <span class="feature-tag">Technical Assessment</span>
+                            <span class="feature-tag" data-aos="fade-up" data-aos-delay="1000">Requirements Gathering</span>
+                            <span class="feature-tag" data-aos="fade-up" data-aos-delay="1100">Market Research</span>
+                            <span class="feature-tag" data-aos="fade-up" data-aos-delay="1200">Technical Assessment</span>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-number">02</div>
-                    <div class="timeline-content">
-                        <h4>Strategy & Architecture</h4>
-                        <p>We develop a comprehensive technical strategy and system architecture. This includes technology stack selection, database design, API planning, and creating a detailed development roadmap.</p>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="timeline-number" data-aos="flip-left" data-aos-delay="400">02</div>
+                    <div class="timeline-content" data-aos="fade-right" data-aos-delay="600">
+                        <h4 data-aos="fade-up" data-aos-delay="800">Strategy & Architecture</h4>
+                        <p data-aos="fade-up" data-aos-delay="1000">We develop a comprehensive technical strategy and system architecture. This includes technology stack selection, database design, API planning, and creating a detailed development roadmap.</p>
                         <div class="timeline-features">
-                            <span class="feature-tag">System Architecture</span>
-                            <span class="feature-tag">Technology Stack</span>
-                            <span class="feature-tag">Development Roadmap</span>
+                            <span class="feature-tag" data-aos="slide-up" data-aos-delay="1100">System Architecture</span>
+                            <span class="feature-tag" data-aos="slide-up" data-aos-delay="1200">Technology Stack</span>
+                            <span class="feature-tag" data-aos="slide-up" data-aos-delay="1300">Development Roadmap</span>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-number">03</div>
-                    <div class="timeline-content">
-                        <h4>Design & Prototyping</h4>
-                        <p>We create beautiful, functional user experiences with modern UI/UX design principles. From wireframes to high-fidelity prototypes, we ensure every interaction is intuitive and engaging.</p>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="timeline-number" data-aos="flip-right" data-aos-delay="500">03</div>
+                    <div class="timeline-content" data-aos="fade-left" data-aos-delay="700">
+                        <h4 data-aos="zoom-in-up" data-aos-delay="900">Design & Prototyping</h4>
+                        <p data-aos="fade-up" data-aos-delay="1100">We create beautiful, functional user experiences with modern UI/UX design principles. From wireframes to high-fidelity prototypes, we ensure every interaction is intuitive and engaging.</p>
                         <div class="timeline-features">
-                            <span class="feature-tag">UI/UX Design</span>
-                            <span class="feature-tag">Interactive Prototypes</span>
-                            <span class="feature-tag">Design Systems</span>
+                            <span class="feature-tag" data-aos="zoom-in" data-aos-delay="1200">UI/UX Design</span>
+                            <span class="feature-tag" data-aos="zoom-in" data-aos-delay="1300">Interactive Prototypes</span>
+                            <span class="feature-tag" data-aos="zoom-in" data-aos-delay="1400">Design Systems</span>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-number">04</div>
-                    <div class="timeline-content">
-                        <h4>Development & Integration</h4>
-                        <p>Our full-stack development brings your vision to life. We build robust frontend interfaces, scalable backend systems, and integrate AI/ML capabilities using modern technologies and best practices.</p>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="timeline-number" data-aos="bounce-in" data-aos-delay="600">04</div>
+                    <div class="timeline-content" data-aos="fade-right" data-aos-delay="800">
+                        <h4 data-aos="zoom-in-down" data-aos-delay="1000">Development & Integration</h4>
+                        <p data-aos="fade-up" data-aos-delay="1200">Our full-stack development brings your vision to life. We build robust frontend interfaces, scalable backend systems, and integrate AI/ML capabilities using modern technologies and best practices.</p>
                         <div class="timeline-features">
-                            <span class="feature-tag">Frontend Development</span>
-                            <span class="feature-tag">Backend APIs</span>
-                            <span class="feature-tag">AI/ML Integration</span>
+                            <span class="feature-tag" data-aos="flip-up" data-aos-delay="1300">Frontend Development</span>
+                            <span class="feature-tag" data-aos="flip-up" data-aos-delay="1400">Backend APIs</span>
+                            <span class="feature-tag" data-aos="flip-up" data-aos-delay="1500">AI/ML Integration</span>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-number">05</div>
-                    <div class="timeline-content">
-                        <h4>Testing & Launch</h4>
-                        <p>We rigorously test every component, optimize performance, and ensure security. After thorough quality assurance, we deploy your solution and provide ongoing support and maintenance.</p>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="timeline-number" data-aos="pulse" data-aos-delay="700" data-aos-duration="1500">05</div>
+                    <div class="timeline-content" data-aos="fade-left" data-aos-delay="900">
+                        <h4 data-aos="zoom-out-up" data-aos-delay="1100">Testing & Launch</h4>
+                        <p data-aos="fade-up" data-aos-delay="1300">We rigorously test every component, optimize performance, and ensure security. After thorough quality assurance, we deploy your solution and provide ongoing support and maintenance.</p>
                         <div class="timeline-features">
-                            <span class="feature-tag">Quality Assurance</span>
-                            <span class="feature-tag">Performance Optimization</span>
-                            <span class="feature-tag">Deployment & Support</span>
+                            <span class="feature-tag" data-aos="fade-up-right" data-aos-delay="1400">Quality Assurance</span>
+                            <span class="feature-tag" data-aos="fade-up-left" data-aos-delay="1500">Performance Optimization</span>
+                            <span class="feature-tag" data-aos="fade-up" data-aos-delay="1600">Deployment & Support</span>
                         </div>
                     </div>
                 </div>
@@ -540,66 +592,71 @@
     <!-- Why Choose Us Section -->
     <section class="why-choose-us">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose Us</h2>
-                <p class="section-description">Expertise that delivers exceptional results</p>
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <h2 class="section-title" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-out-cubic">Why Choose Us</h2>
+                <p class="section-description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Expertise that delivers exceptional results</p>
             </div>
             <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <div class="benefit-icon" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800" data-aos-once="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" data-aos="rotate-in" data-aos-delay="500" data-aos-duration="600">
                             <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h3>Premium Quality</h3>
-                    <p>We deliver pixel-perfect designs and code that exceeds industry standards with meticulous attention to detail.</p>
+                    <h3 data-aos="fade-right" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic">Premium Quality</h3>
+                    <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="500" data-aos-easing="ease-out-cubic">We deliver pixel-perfect designs and code that exceeds industry standards with meticulous attention to detail.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <div class="benefit-icon" data-aos="pulse" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" data-aos="flash" data-aos-delay="600" data-aos-duration="800">
                             <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h3>Lightning Fast</h3>
-                    <p>Our solutions are optimized for speed and performance, ensuring your users have the best experience possible.</p>
+                    <h3 data-aos="fade-left" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic">Lightning Fast</h3>
+                    <p data-aos="fade-up" data-aos-delay="900" data-aos-duration="500" data-aos-easing="ease-out-cubic">Our solutions are optimized for speed and performance, ensuring your users have the best experience possible.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <div class="benefit-icon" data-aos="bounce-in" data-aos-delay="500" data-aos-duration="800" data-aos-once="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" data-aos="flip-left" data-aos-delay="700" data-aos-duration="700">
                             <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V9M19 3H17V9H19V3Z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h3>Expert Team</h3>
-                    <p>Our seasoned professionals have years of experience building world-class digital solutions for global brands.</p>
+                    <h3 data-aos="fade-right" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic">Expert Team</h3>
+                    <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500" data-aos-easing="ease-out-cubic">Our seasoned professionals have years of experience building world-class digital solutions for global brands.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <div class="benefit-icon" data-aos="zoom-in-down" data-aos-delay="600" data-aos-duration="800" data-aos-once="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" data-aos="slide-down" data-aos-delay="800" data-aos-duration="600">
                             <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
-                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/>
-                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none" data-aos="draw" data-aos-delay="1000" data-aos-duration="800"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none" data-aos="draw" data-aos-delay="1200" data-aos-duration="800"/>
                         </svg>
                     </div>
-                    <h3>Full-Stack Solutions</h3>
-                    <p>From design to deployment, we handle every aspect of your project with comprehensive end-to-end expertise.</p>
+                    <h3 data-aos="fade-left" data-aos-delay="900" data-aos-duration="600" data-aos-easing="ease-out-cubic">Full-Stack Solutions</h3>
+                    <p data-aos="fade-up" data-aos-delay="1100" data-aos-duration="500" data-aos-easing="ease-out-cubic">From design to deployment, we handle every aspect of your project with comprehensive end-to-end expertise.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <div class="benefit-icon" data-aos="flip-right" data-aos-delay="700" data-aos-duration="800" data-aos-once="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" data-aos="zoom-in-left" data-aos-delay="900" data-aos-duration="600">
                             <path d="M12 8V4L8 8H11C11 10.97 13.54 13.43 16.51 13.43V11.65C14.75 11.65 13.32 10.22 13.32 8.48H16.5L12.5 4.5L12 8Z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h3>Agile Process</h3>
-                    <p>We use proven methodologies and maintain transparent communication throughout every project milestone.</p>
+                    <h3 data-aos="fade-right" data-aos-delay="1000" data-aos-duration="600" data-aos-easing="ease-out-cubic">Agile Process</h3>
+                    <p data-aos="fade-up" data-aos-delay="1200" data-aos-duration="500" data-aos-easing="ease-out-cubic">We use proven methodologies and maintain transparent communication throughout every project milestone.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <div class="benefit-icon" data-aos="heartBeat" data-aos-delay="800" data-aos-duration="1200" data-aos-once="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="600">
                             <path d="M17 12H7V10H17V12ZM19 4H15.82L14.82 3H9.18L8.18 4H5V6H19V4ZM6 8V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V8H6Z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h3>Long-term Support</h3>
-                    <p>Our relationship doesn't end at launch. We provide ongoing maintenance and support to ensure continued success.</p>
+                    <h3 data-aos="fade-left" data-aos-delay="1100" data-aos-duration="600" data-aos-easing="ease-out-cubic">Long-term Support</h3>
+                    <p data-aos="fade-up" data-aos-delay="1300" data-aos-duration="500" data-aos-easing="ease-out-cubic">Our relationship doesn't end at launch. We provide ongoing maintenance and support to ensure continued success.</p>
                 </div>
             </div>
         </div>
@@ -608,80 +665,80 @@
     <!-- FAQ Section -->
     <section class="faq">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-description">Everything you need to know about working with us</p>
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <h2 class="section-title" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-out-cubic">Frequently Asked Questions</h2>
+                <p class="section-description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic">Everything you need to know about working with us</p>
             </div>
             <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question" type="button">
-                        <span>How long does a typical project take?</span>
-                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <button class="faq-question" type="button" data-aos="slide-right" data-aos-delay="300" data-aos-duration="600">
+                        <span data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">How long does a typical project take?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" data-aos="rotate-in" data-aos-delay="700" data-aos-duration="400">
                             <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <div class="faq-answer">
-                        <p>Project timelines vary based on complexity and scope. A simple website typically takes 2-4 weeks, while complex web applications can take 2-6 months. We provide detailed timelines during our initial consultation.</p>
+                    <div class="faq-answer" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500" data-aos-easing="ease-out-cubic">
+                        <p data-aos="fade-in" data-aos-delay="800" data-aos-duration="400">Project timelines vary based on complexity and scope. A simple website typically takes 2-4 weeks, while complex web applications can take 2-6 months. We provide detailed timelines during our initial consultation.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item">
-                    <button class="faq-question" type="button">
-                        <span>What's included in your development service?</span>
-                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <button class="faq-question" type="button" data-aos="slide-left" data-aos-delay="400" data-aos-duration="600">
+                        <span data-aos="fade-in" data-aos-delay="600" data-aos-duration="500">What's included in your development service?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" data-aos="flip-left" data-aos-delay="800" data-aos-duration="400">
                             <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <div class="faq-answer">
-                        <p>Our full-stack development service includes UI/UX design, frontend and backend development, database setup, API integration, testing, deployment, and 3 months of post-launch support.</p>
+                    <div class="faq-answer" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500" data-aos-easing="ease-out-cubic">
+                        <p data-aos="fade-in" data-aos-delay="900" data-aos-duration="400">Our full-stack development service includes UI/UX design, frontend and backend development, database setup, API integration, testing, deployment, and 3 months of post-launch support.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item">
-                    <button class="faq-question" type="button">
-                        <span>Do you work with startups or only established companies?</span>
-                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <button class="faq-question" type="button" data-aos="slide-right" data-aos-delay="500" data-aos-duration="600">
+                        <span data-aos="fade-in" data-aos-delay="700" data-aos-duration="500">Do you work with startups or only established companies?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" data-aos="bounce-in" data-aos-delay="900" data-aos-duration="400">
                             <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <div class="faq-answer">
-                        <p>We work with businesses of all sizes, from early-stage startups to Fortune 500 companies. We have flexible engagement models and pricing structures to suit different budgets and requirements.</p>
+                    <div class="faq-answer" data-aos="fade-up" data-aos-delay="800" data-aos-duration="500" data-aos-easing="ease-out-cubic">
+                        <p data-aos="fade-in" data-aos-delay="1000" data-aos-duration="400">We work with businesses of all sizes, from early-stage startups to Fortune 500 companies. We have flexible engagement models and pricing structures to suit different budgets and requirements.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item">
-                    <button class="faq-question" type="button">
-                        <span>Can you help with AI and machine learning projects?</span>
-                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <button class="faq-question" type="button" data-aos="slide-left" data-aos-delay="600" data-aos-duration="600">
+                        <span data-aos="fade-in" data-aos-delay="800" data-aos-duration="500">Can you help with AI and machine learning projects?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="400">
                             <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <div class="faq-answer">
-                        <p>Yes! We specialize in AI/ML integration, including custom model development, API integrations with services like OpenAI, computer vision solutions, and predictive analytics implementations.</p>
+                    <div class="faq-answer" data-aos="fade-up" data-aos-delay="900" data-aos-duration="500" data-aos-easing="ease-out-cubic">
+                        <p data-aos="fade-in" data-aos-delay="1100" data-aos-duration="400">Yes! We specialize in AI/ML integration, including custom model development, API integrations with services like OpenAI, computer vision solutions, and predictive analytics implementations.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item">
-                    <button class="faq-question" type="button">
-                        <span>What happens after my project is completed?</span>
-                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <button class="faq-question" type="button" data-aos="slide-right" data-aos-delay="700" data-aos-duration="600">
+                        <span data-aos="fade-in" data-aos-delay="900" data-aos-duration="500">What happens after my project is completed?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" data-aos="pulse" data-aos-delay="1100" data-aos-duration="600">
                             <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <div class="faq-answer">
-                        <p>After launch, we provide 3 months of free support including bug fixes and minor updates. We also offer ongoing maintenance packages, feature enhancements, and technical support as your business grows.</p>
+                    <div class="faq-answer" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500" data-aos-easing="ease-out-cubic">
+                        <p data-aos="fade-in" data-aos-delay="1200" data-aos-duration="400">After launch, we provide 3 months of free support including bug fixes and minor updates. We also offer ongoing maintenance packages, feature enhancements, and technical support as your business grows.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item">
-                    <button class="faq-question" type="button">
-                        <span>How do you ensure project quality and timely delivery?</span>
-                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                    <button class="faq-question" type="button" data-aos="slide-left" data-aos-delay="800" data-aos-duration="600">
+                        <span data-aos="fade-in" data-aos-delay="1000" data-aos-duration="500">How do you ensure project quality and timely delivery?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" data-aos="heartBeat" data-aos-delay="1200" data-aos-duration="800">
                             <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <div class="faq-answer">
-                        <p>We use agile development methodology with regular check-ins, automated testing, code reviews, and continuous integration. You'll receive weekly progress updates and have access to staging environments to review work in progress.</p>
+                    <div class="faq-answer" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="500" data-aos-easing="ease-out-cubic">
+                        <p data-aos="fade-in" data-aos-delay="1300" data-aos-duration="400">We use agile development methodology with regular check-ins, automated testing, code reviews, and continuous integration. You'll receive weekly progress updates and have access to staging environments to review work in progress.</p>
                     </div>
                 </div>
             </div>
@@ -693,90 +750,90 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-header">
-                        <h2>Quick Connect</h2>
-                        <p>Get started in 2 minutes</p>
+                    <div class="contact-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                        <h2 data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-out-cubic">Quick Connect</h2>
+                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic">Get started in 2 minutes</p>
                     </div>
                     
                     <div class="contact-steps">
-                        <div class="contact-step">
-                            <div class="step-number">1</div>
-                            <div class="step-content">
-                                <h4>Connect →</h4>
-                                <p>We'll reach out within 24 hours</p>
+                        <div class="contact-step" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                            <div class="step-number" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">1</div>
+                            <div class="step-content" data-aos="slide-left" data-aos-delay="500" data-aos-duration="600">
+                                <h4 data-aos="fade-in" data-aos-delay="700" data-aos-duration="500">Connect →</h4>
+                                <p data-aos="fade-up" data-aos-delay="900" data-aos-duration="400">We'll reach out within 24 hours</p>
                             </div>
                         </div>
                         
-                        <div class="contact-step">
-                            <div class="step-number">2</div>
-                            <div class="step-content">
-                                <h4>Schedule Discovery Call</h4>
-                                <p>30-minute strategy session</p>
+                        <div class="contact-step" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                            <div class="step-number" data-aos="pulse" data-aos-delay="400" data-aos-duration="1000">2</div>
+                            <div class="step-content" data-aos="slide-right" data-aos-delay="600" data-aos-duration="600">
+                                <h4 data-aos="fade-in" data-aos-delay="800" data-aos-duration="500">Schedule Discovery Call</h4>
+                                <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="400">30-minute strategy session</p>
                                 <div class="step-features">
-                                    <span>🗓️ Free consultation</span>
-                                    <span>🎯 Tailored strategy</span>
-                                    <span>📊 Project roadmap</span>
+                                    <span data-aos="bounce-in" data-aos-delay="1200" data-aos-duration="400">🗓️ Free consultation</span>
+                                    <span data-aos="bounce-in" data-aos-delay="1300" data-aos-duration="400">🎯 Tailored strategy</span>
+                                    <span data-aos="bounce-in" data-aos-delay="1400" data-aos-duration="400">📊 Project roadmap</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="contact-methods">
-                        <h3>Direct Contact</h3>
-                        <p>Reach out personally</p>
+                    <div class="contact-methods" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-once="true">
+                        <h3 data-aos="zoom-in-down" data-aos-delay="500" data-aos-duration="800">Direct Contact</h3>
+                        <p data-aos="fade-up" data-aos-delay="700" data-aos-duration="600">Reach out personally</p>
                         
                         <div class="contact-method">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <div class="contact-item" data-aos="slide-up" data-aos-delay="900" data-aos-duration="600" data-aos-easing="ease-out-cubic">
+                                <div class="contact-icon" data-aos="flip-left" data-aos-delay="1100" data-aos-duration="500">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" data-aos="rotate-in" data-aos-delay="1300">
                                         <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
                                         <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" fill="none"/>
                                     </svg>
                                 </div>
-                                <div class="contact-content">
-                                    <span class="contact-label">hello@sparkbubble.com</span>
-                                    <span class="contact-desc">For project inquiries</span>
+                                <div class="contact-content" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="500">
+                                    <span class="contact-label" data-aos="fade-right" data-aos-delay="1400" data-aos-duration="400">hello@sparkbubble.com</span>
+                                    <span class="contact-desc" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="400">For project inquiries</span>
                                 </div>
                             </div>
                             
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <div class="contact-item" data-aos="slide-up" data-aos-delay="1000" data-aos-duration="600" data-aos-easing="ease-out-cubic">
+                                <div class="contact-icon" data-aos="zoom-in-down" data-aos-delay="1200" data-aos-duration="500">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-aos="heartBeat" data-aos-delay="1400" data-aos-duration="800">
                                         <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3v9zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-2.18-1.77-2.18-1 0-1.5.7-1.7 1.2-.1.3-.1.7-.1 1.1V19h-3v-9h3v1.4a3.3 3.3 0 013-1.54c2.2 0 3.5 1.44 3.5 4.1V19z"/>
                                     </svg>
                                 </div>
-                                <div class="contact-content">
-                                    <a href="https://www.linkedin.com/company/sparkbubble" target="_blank" rel="noopener noreferrer" class="contact-label">Connect on LinkedIn</a>
-                                    <span class="contact-desc">Professional networking</span>
+                                <div class="contact-content" data-aos="fade-in" data-aos-delay="1300" data-aos-duration="500">
+                                    <a href="https://www.linkedin.com/company/sparkbubble" target="_blank" rel="noopener noreferrer" class="contact-label" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="400">Connect on LinkedIn</a>
+                                    <span class="contact-desc" data-aos="fade-up" data-aos-delay="1600" data-aos-duration="400">Professional networking</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="contact-form-container">
+                <div class="contact-form-container" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-once="true">
                     <form class="contact-form" id="contactForm">
-                        <div class="form-header">
-                            <h3>Tell Us About Your Project</h3>
-                            <p>Share your vision and we'll help bring it to life with cutting-edge technology and expert craftsmanship.</p>
+                        <div class="form-header" data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="800">
+                            <h3 data-aos="fade-in" data-aos-delay="800" data-aos-duration="600">Tell Us About Your Project</h3>
+                            <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500">Share your vision and we'll help bring it to life with cutting-edge technology and expert craftsmanship.</p>
                         </div>
                         
-                        <div class="form-group">
-                            <input type="text" id="fullName" name="fullName" placeholder="Full Name*" required>
+                        <div class="form-group" data-aos="slide-up" data-aos-delay="700" data-aos-duration="500">
+                            <input type="text" id="fullName" name="fullName" placeholder="Full Name*" required data-aos="fade-in" data-aos-delay="900">
                             <span class="form-error" id="fullNameError"></span>
                         </div>
                         
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email Address*" required>
+                        <div class="form-group" data-aos="slide-up" data-aos-delay="800" data-aos-duration="500">
+                            <input type="email" id="email" name="email" placeholder="Email Address*" required data-aos="fade-in" data-aos-delay="1000">
                             <span class="form-error" id="emailError"></span>
                         </div>
                         
-                        <div class="form-group">
-                            <input type="text" id="company" name="company" placeholder="Company">
+                        <div class="form-group" data-aos="slide-up" data-aos-delay="900" data-aos-duration="500">
+                            <input type="text" id="company" name="company" placeholder="Company" data-aos="fade-in" data-aos-delay="1100">
                         </div>
                         
-                        <div class="form-group">
-                            <select id="budget" name="budget">
+                        <div class="form-group" data-aos="slide-up" data-aos-delay="1000" data-aos-duration="500">
+                            <select id="budget" name="budget" data-aos="fade-in" data-aos-delay="1200">
                                 <option value="">Select budget range...</option>
                                 <option value="under-10k">Under $10,000</option>
                                 <option value="10k-25k">$10,000 - $25,000</option>
@@ -786,24 +843,24 @@
                             </select>
                         </div>
                         
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="600">
                             <div class="checkbox-group">
-                                <label class="checkbox-label">
+                                <label class="checkbox-label" data-aos="flip-up" data-aos-delay="1300" data-aos-duration="400">
                                     <input type="checkbox" name="projectType" value="web-design">
                                     <span class="checkmark"></span>
                                     Web Design
                                 </label>
-                                <label class="checkbox-label">
+                                <label class="checkbox-label" data-aos="flip-up" data-aos-delay="1400" data-aos-duration="400">
                                     <input type="checkbox" name="projectType" value="development">
                                     <span class="checkmark"></span>
                                     Development
                                 </label>
-                                <label class="checkbox-label">
+                                <label class="checkbox-label" data-aos="flip-up" data-aos-delay="1500" data-aos-duration="400">
                                     <input type="checkbox" name="projectType" value="ai-ml">
                                     <span class="checkmark"></span>
                                     AI & Machine Learning
                                 </label>
-                                <label class="checkbox-label">
+                                <label class="checkbox-label" data-aos="flip-up" data-aos-delay="1600" data-aos-duration="400">
                                     <input type="checkbox" name="projectType" value="digital-strategy">
                                     <span class="checkmark"></span>
                                     Digital Strategy
@@ -811,17 +868,17 @@
                             </div>
                         </div>
                         
-                        <div class="form-group">
-                            <textarea id="projectDetails" name="projectDetails" placeholder="Tell us about your vision, goals, target audience, timeline, and any specific requirements..." rows="4" required></textarea>
+                        <div class="form-group" data-aos="slide-up" data-aos-delay="1200" data-aos-duration="500">
+                            <textarea id="projectDetails" name="projectDetails" placeholder="Tell us about your vision, goals, target audience, timeline, and any specific requirements..." rows="4" required data-aos="fade-in" data-aos-delay="1400"></textarea>
                             <span class="form-error" id="projectDetailsError"></span>
                         </div>
                         
-                        <button type="submit" class="btn-primary" id="submitBtn">
-                            <span class="btn-text">Send Project Details</span>
+                        <button type="submit" class="btn-primary" id="submitBtn" data-aos="zoom-in" data-aos-delay="1300" data-aos-duration="600" data-aos-easing="ease-out-cubic">
+                            <span class="btn-text" data-aos="fade-in" data-aos-delay="1500">Send Project Details</span>
                             <span class="btn-loader" style="display: none;"></span>
                         </button>
                         
-                        <div class="form-success" id="formSuccess" style="display: none;">
+                        <div class="form-success" id="formSuccess" style="display: none;" data-aos="bounce-in" data-aos-duration="800">
                             <span class="success-icon">✅</span>
                             Thank you! We'll reach out within 24 hours.
                         </div>
@@ -917,7 +974,16 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/animations.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
