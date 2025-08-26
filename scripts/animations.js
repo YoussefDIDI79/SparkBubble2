@@ -111,19 +111,36 @@ class AnimationController {
     
     // Animated counters for statistics
     setupCounterAnimations() {
-        const counters = document.querySelectorAll('.stat-number');
-        
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    this.animateCounter(entry.target);
-                    counterObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        counters.forEach(counter => counterObserver.observe(counter));
-    }
+    const counters = document.querySelectorAll('.stat-number');
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const content = entry.target.textContent.trim(); // e.g., "7/7"
+            const parts = content.split('/'); // ["7", "7"]
+
+            if (entry.isIntersecting) {
+                const targetNumber = parseInt(parts[0]);
+                const duration = 1000; // animation duration in ms
+                let start = 0;
+                const increment = targetNumber / (duration / 16); // approx 60fps
+
+                const counterInterval = setInterval(() => {
+                    start += increment;
+                    if (start >= targetNumber) {
+                        start = targetNumber;
+                        clearInterval(counterInterval);
+                    }
+                    entry.target.textContent = Math.floor(start) + '/' + parts[1];
+                }, 16); // ~60fps
+
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+}
+
     
     // Progress bar animations for skills
     setupProgressBarAnimations() {
