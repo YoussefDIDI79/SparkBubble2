@@ -16,6 +16,17 @@
     #team .team-stats .stat-item span{
         color: black;
     }
+    #technologies,
+    #technologies h2,
+    #technologies h3,
+    #technologies p,
+    #technologies .tech-name {
+        color: black; /* ensures text is readable */
+    }
+
+    #technologies .tech-card {
+        background-color: white; /* optional: ensures good contrast */
+    }
 
     /* You can add Skills & FAQ later similarly */
 }
